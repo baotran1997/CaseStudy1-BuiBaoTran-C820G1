@@ -1,0 +1,115 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+
+  padding: 15px 20px;
+  height: auto;
+  width: 100%;
+
+  background-color: #121213;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+footer .socialFooter,
+.contactFooter {
+  width: 50%;
+}
+
+/* flex icon footer */
+.iconFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: auto;
+  width: 100%;
+}
+/* each icon */
+.iconFooter a {
+  display: block;
+
+  text-decoration: none;
+  padding: 20px;
+
+  color: white;
+  text-align: center;
+  line-height: normal;
+  font-size: 25px;
+  transition: 0.1s;
+}
+
+.iconFooter a:hover {
+  background-color: white;
+  color: #121213;
+  border-radius: 50%;
+}
+
+/* contactFooter */
+.contactFooter form input {
+  width: 70%;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.contactFooter form textarea {
+  width: 70%;
+  height: 75px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.contactFooter form button {
+  width: 14%;
+  height: 23px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+/* input, textarea, button */
+.contactFooter form input,
+textarea,
+button {
+  background-color: #6e727c;
+  border-radius: 7px;
+  border: none;
+}
+
+/* placeholder */
+.contactFooter form input::placeholder,
+textarea::placeholder {
+  color: white;
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* button */
+.contactFooter form button:hover {
+  background-color: black;
+}
+/* font main text footer */
+
+footer .sloganFooter {
+  font-weight: bolder;
+  font-size: large;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .socialFooter,
+  footer .contactFooter {
+    width: 100%;
+  }
+  .iconFooter {
+    flex-wrap: wrap;
+  }
+}
